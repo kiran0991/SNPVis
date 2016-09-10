@@ -1,9 +1,9 @@
- SNPViz v0.2
+ SNPVis v0.2
  
     Text-based and Parsable application for viewing bam alignments with SNP along with flanking region 
  SYNOPSIS
  
-    SNPViz_v0.2.sh [-help] [-b/-bam=filename] [-f/-fasta=filename] [-c/-vcf=filename] [-n/-flank Int] [-o/-out=output_directory_path]
+    SNPVis_v0.2.sh [-help] [-b/-bam=filename] [-f/-fasta=filename] [-c/-vcf=filename] [-n/-flank Int] [-o/-out=output_directory_path]
 
  DESCRIPTION
  
@@ -29,12 +29,12 @@
 
  EXAMPLES
  
-    SNPViz_v0.2.sh -b Chr1.bam -f genome.fasta -c Chr1.vcf -n 50 -o ./
+    SNPVis_v0.2.sh -b Chr1.bam -f genome.fasta -c Chr1.vcf -n 50 -o ./
     
 
  IMPLEMENTATION
  
-    version         SNPViz_v0.2.sh (www.bionivid.com) 0.2.0
+    version         SNPVis_v0.2.sh (www.bionivid.com) 0.2.0
     
     author          KIRAN BANKAR & ROHIT SHUKLA 
     
@@ -46,7 +46,7 @@
     
     address         Bionivid Technology Pvt Ltd, Banglore 560037
     
-    availibility    SNPViz is available as a standard binary executable. The source code will be available under upon request.
+    availibility    SNPVis is available as a standard binary executable. The source code will be available under upon request.
     
  DIPENDANCY
  
