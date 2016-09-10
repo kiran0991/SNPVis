@@ -228,15 +228,18 @@ declare -A CHROM_DICT
 END=`wc -l $FASTA.fai`
 
 ## Ref : http://stackoverflow.com/questions/169511/how-do-i-iterate-over-a-range-of-numbers-defined-by-variables-in-bash
-
-for i in $(seq 1 1 $chrs)
-{
-	#echo $i
-	CHROM_DICT=( [`cut -f1  $FASTA.fai`]=`cut -f2 $FASTA.fai`)
+## http://www.artificialworlds.net/blog/2012/10/17/bash-associative-array-examples/
+while read line
+do
+	echo $line
+	ChrTmp=`echo "${line}" | awk '{print $1;}'`
+	ChrSz=`echo "${line}" | awk '{print $2;}'`
+	CHROM_DICT["${ChrTmp}"]="${ChrSz}"
 	
-}
+done < $FASTA.fai
 
 #echo "${CHROM_DICT[Chr1]}"
+#echo "${CHROM_DICT[Chr2]}"
 
 ################## MAKE DICT END ###########################
 
