@@ -38,11 +38,9 @@
     
     author          KIRAN BANKAR & ROHIT SHUKLA 
     
-    copyright       Copyright (c) http://www.bionivid.com
-    
     script_id       07
     
-    contact         kiran@bionivid.com / rohit@bionivid.com 
+    contact         kiran0991@gmail.com / rohit@bionivid.com 
     
     address         Bionivid Technology Pvt Ltd, Banglore 560037
     
